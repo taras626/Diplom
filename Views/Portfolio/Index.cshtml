@@ -1,0 +1,17 @@
+﻿@model IQueryable<ObjectOfPortfolio>
+
+@{
+    ViewBag.Title = "Портфолио";
+}
+<section class="portfolio">
+    <div class="container">
+        <div class="portfolio__tab">
+            @foreach (ObjectOfPortfolio entity in Model)
+            {
+                <div class="portfolio__tab__item">
+                    <a asp-area="" asp-controller="Portfolio" asp-action="Index" asp-route-id="@entity.Id"><img src="~/img/portfolio/@entity.Id/0.jpg" alt="Alternate Text" /></a>
+                </div>
+            }
+        </div>
+    </div>
+</section>

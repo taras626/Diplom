@@ -1,0 +1,70 @@
+﻿
+.slidebar {
+    position: relative;
+    margin-bottom: 10px;
+
+    .slick-prev, .slick-next {
+        outline: none;
+        width: 5%;
+        height: 5%;
+        position: absolute;
+        top: 50%;
+        left: -5px;
+        transform: translateY(-50%);
+        border: none;
+        background-color: transparent;
+        z-index: 1;
+    }
+
+    .slick-prev {
+
+        img {
+            transform: rotate(-90deg);
+        }
+    }
+
+    .slick-next {
+        right: -5px;
+        left: auto;
+        img {
+            transform: rotate(90deg);
+        }
+    }
+
+    .slidebarImg {
+        max-height: 650px;
+        overflow: hidden;
+    }
+
+    .slick-dots {
+    }
+}
+
+.aboutMe__main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__photo {
+        height: 500px;
+        width: 333px;
+        margin-top: 48px;
+
+        img {
+            height: 100%;
+        }
+    }
+
+    &__desc {
+        h1 {
+            text-align: center;
+            padding: 2px;
+        }
+
+        &__txt {
+            width: 80%;
+            text-align: justify;
+            margin: 0 auto;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+﻿<div class="container">
+    <section class="contacts">
+        <h1 class="contacts__title">Контакты</h1>
+        <div class="contactsNav">
+            <div class="contactsNav__left">
+                <div class="phone">
+                    <h4>Телефон:</h4>
+                    <a href="tel:@Config.CompanyPhoneShort">@Config.CompanyPhone</a>
+                </div>
+                <div class="socialMedia">
+                    <h4>Социальные сети:</h4> 
+                    <a href="#"><img src="~/icons/whatsapp.png" alt="WatsApp" class="socialMedia__img"/></a>
+                    <a href="#"><img src="~/icons/vk.png" alt="Vk" class="socialMedia__img"/></a>
+                    <a href="#"><img src="~/icons/telegram.png" alt="Telegram" class="socialMedia__img"/></a>
+                </div>
+                <div class="mail">
+                    <h4>Почта:</h4>
+                    @Config.CompanyEmail
+                </div>
+            </div>
+            <div class="contactsNav__right">
+                <h2>Я хочу заказать дизайн проект</h2>
+                <form action="/" method="post">
+                    <input type="text" name="name" value="Введите ваше имя" />
+                    <input type="text" name="email" value="Введите ваш Email" />
+                    <input class="" type="submit" name="btmPost" value="Оставить заявку" />
+                </form>
+            </div>
+        </div>
+    </section> 
+</div>

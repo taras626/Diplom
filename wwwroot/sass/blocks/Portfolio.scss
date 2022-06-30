@@ -1,0 +1,38 @@
+﻿.portfolio {
+    &__item {
+        &__mainPhoto {
+            display: block;
+            margin: 40px 0;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        h2 {
+            display: block;
+            text-align: center;
+        }
+
+        &__subtitle {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-size: large;
+            font-weight:600;
+            margin: 40px 0;
+        }
+    }
+
+    &__tab {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        &__item {
+            margin-top: 20px;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+﻿.contacts{
+    &__title{
+        text-align: center;
+    }
+
+    &Nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
